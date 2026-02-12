@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Аманда — С днём святого Валентина</title>
+  <!-- Максимально тихий, читаемый шрифт -->
+  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: #faf6f2;  /* очень тёплый, почти бумажный оттенок */
+      font-family: 'Source Serif Pro', Georgia, 'Times New Roman', serif;
+      color: #2e2a28;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 2rem 1.5rem;
+      line-height: 1.6;
+      font-weight: 300;
+    }
+
+    .letter {
+      max-width: 700px;
+      width: 100%;
+      background: #fffcf9;
+      padding: 3.5rem 3rem;
+      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.02), 0 4px 20px rgba(0, 0, 0, 0.01);
+      border-radius: 2px;
+      position: relative;
+    }
+
+    /* Лёгкая, почти незаметная текстура — намёк на бумагу */
+    .letter::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><filter id="noise"><feTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="1" stitchTiles="stitch"/><feColorMatrix type="matrix" values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 0.04 0"/></filter><rect width="100" height="100" filter="url(%23noise)" opacity="0.1"/></svg>');
+      opacity: 0.2;
+      pointer-events: none;
+      border-radius: 2px;
+    }
+
+    .date {
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: #9e8e8a;
+      margin-bottom: 2rem;
+      font-weight: 300;
+    }
+
+    h1 {
+      font-size: 2.8rem;
+      font-weight: 300;
+      color: #57433e;
+      margin-bottom: 0.25rem;
+      line-height: 1.2;
+      letter-spacing: -0.5px;
+    }
+
+    .greeting {
+      font-size: 1.3rem;
+      font-weight: 300;
+      color: #7b5e58;
+      margin-bottom: 2.2rem;
+      border-bottom: 1px solid #e3d9d2;
+      padding-bottom: 1.2rem;
+      font-style: italic;
+    }
+
+    .name {
+      font-weight: 600;
+      color: #4b3530;
+    }
+
+    .verse {
+      font-size: 1.1rem;
+      color: #3f3330;
+      margin-bottom: 1.8rem;
+    }
+
+    p {
+      font-size: 1.1rem;
+      margin-bottom: 1.6rem;
+      color: #3b3533;
+    }
+
+    .signature {
+      margin-top: 2.8rem;
+      font-size: 1.2rem;
+      font-style: italic;
+      color: #5e4944;
+      border-top: 1px solid #e7dbd4;
+      padding-top: 2rem;
+    }
+
+    .signature span {
+      font-weight: 600;
+      font-style: normal;
+    }
+
+    /* Одна-единственная маленькая деталь — просто тихая линия */
+    hr {
+      border: 0;
+      height: 1px;
+      background: linear-gradient(to right, transparent, #ddd0c8, transparent);
+      margin: 2rem 0 1rem;
+    }
+
+    @media (max-width: 550px) {
+      .letter {
+        padding: 2rem 1.5rem;
+      }
+      h1 {
+        font-size: 2.2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="letter">
+    <!-- дата — сегодняшний день, но можно убрать, оставил для настроения -->
+    <div class="date">14 февраля 2026</div>
+    
+    <!-- Только имя. Ничего лишнего. -->
+    <h1>Аманда</h1>
+    <div class="greeting">
+      — в День всех влюблённых я пишу тебе.
+    </div>
+
+    <!-- Здесь начинается искренность. Текст очень личный, без фальши. -->
+    <p style="font-weight: 400; color: #4f3c38;">
+      Я долго думал, что тебе написать. Не хотелось открыток с чужими стихами, блестящих фраз и картинок. 
+      Хочется просто сказать тебе то, что чувствую. Без лишнего.
+    </p>
+    
+    <p>
+      Ты — человек, с которым я чувствую себя настоящим. Рядом с тобой не нужно играть роли, притворяться 
+      кем-то другим или подбирать слова. Ты принимаешь меня со всем, что внутри — и это, наверное, 
+      самое ценное, что может быть.
+    </p>
+    
+    <p>
+      В этом мире так много шума, спешки, людей, которые постоянно куда-то бегут. А с тобой — тишина. 
+      Не та, которая неловкая, а та, в которой спокойно. Я благодарен тебе за это.
+    </p>
+    
+    <p>
+      Я не знаю, что будет через год или десять лет. Но сегодня, сейчас, я точно знаю: 
+      ты — важная часть моей жизни. И я хочу, чтобы ты помнила: ты не одна. 
+      Я рядом. Всегда.
+    </p>
+    
+    <p>
+      С Днём святого Валентина, Аманда. Не потому, что так принято, а потому что это повод 
+      сказать тебе то, что говорю слишком редко.
+    </p>
+
+    <hr>
+
+    <div class="signature">
+      С тёплым сердцем,<br>
+      <span>Твой человек.</span>
+    </div>
+    
+    <!-- Никаких кнопок, никаких всплывашек, никаких сердечек. Только искренность. -->
+  </main>
+</body>
+</html>
